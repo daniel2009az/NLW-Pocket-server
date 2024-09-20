@@ -21,15 +21,16 @@ As principais tecnologias usadas neste projeto incluem:
 O servidor é configurado utilizando Fastify com suporte a CORS. As rotas são registradas para gerenciar a criação de metas, a conclusão de metas e o resumo semanal
 
 ## 📊 Esquema do Banco de Dados
-**Tabela *goals***
-id: ID do objetivo (string, chave primária, gerado automaticamente).
-title: Título do objetivo (string, não pode ser nulo).
-desiredWeeklyFrequency: Frequência desejada semanal (inteiro, não pode ser nulo).
-createdAt: Data de criação (timestamp com timezone, não pode ser nulo, padrão é a data atual).
-**Tabela *goals_completions***
-id: ID da conclusão (string, chave primária, gerado automaticamente).
-goalId: ID do objetivo correspondente (string, referência à tabela goals, não pode ser nulo).
-createdAt: Data de criação da conclusão (timestamp com timezone, não pode ser nulo, padrão é a data atual).
+**Tabela *goals***<br>
+id: ID do objetivo (string, chave primária, gerado automaticamente).<br>
+title: Título do objetivo (string, não pode ser nulo).<br>
+desiredWeeklyFrequency: Frequência desejada semanal (inteiro, não pode ser nulo).<br>
+createdAt: Data de criação (timestamp com timezone, não pode ser nulo, padrão é a data atual).<br>
+
+**Tabela *goals_completions***<br>
+ id: ID da conclusão (string, chave primária, gerado automaticamente).<br>
+ goalId: ID do objetivo correspondente (string, referência à tabela goals, não pode ser nulo).<br>
+ createdAt: Data de criação da conclusão (timestamp com timezone, não pode ser nulo, padrão é a data atual).<br>
 
 ## 📚 Documentação da API
 - Criação de Metas
